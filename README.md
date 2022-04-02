@@ -84,5 +84,16 @@ If a script file let's say called args.sh takes arguments I can echo those argum
 - $PPID will the PID of the Parent Process of the current process
 - $? will print the exit status of the process. If the exit status is 0 then the process terminated without successfully. If it is greater than 0 then it terminated unsuccessfully
 
+# Globbing
 
+Globbing is similar to REGEX. 
+
+- A question mark ? will denote a single character in this position. so ls ?.txt will print all txt files that have names of a single character
+
+- \* 0 or more occurences. so ls \*.txt will match all files with the txt extension
+
+- [-] will match anything in the character class  
+
+- {---,---,---} will match anything (atleast 1) in this set.
+- We can combine the globbing like ls \*{.txt,.sh} to print all files that are either txt files or shell files
 
