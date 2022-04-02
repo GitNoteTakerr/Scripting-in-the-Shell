@@ -81,7 +81,6 @@ If a script file let's say called args.sh takes arguments I can echo those argum
 # Some Special Variables
 
 - $$ will print the pid of the current process 
-- 
 - $PPID will the PID of the Parent Process of the current process
 - $? will print the exit status of the process. If the exit status is 0 then the process terminated without successfully. If it is greater than 0 then it terminated unsuccessfully
 
